@@ -4,9 +4,9 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": -409.7974,
-    "scrollLeft": -229.235,
-    "zoomLevel": 0.85,
+    "scrollTop": -288.3494,
+    "scrollLeft": -45,
+    "zoomLevel": 1,
     "show": 431,
     "database": 32,
     "databaseName": "ProCo",
@@ -52,12 +52,13 @@
     "tableEntities": {
       "hso_al6hmpbqbIK6whrW8": {
         "id": "hso_al6hmpbqbIK6whrW8",
-        "name": "BasePortfolios",
+        "name": "Portfolios",
         "comment": "Все портфолио",
         "columnIds": [
           "NiY05A8JK14TGaI78w956",
           "PX1jReeD2cpvQDRRhPkXL",
-          "pTJrkbcZ1wOfqil7NPHkg"
+          "pTJrkbcZ1wOfqil7NPHkg",
+          "-W6M3l__GKict3bJ3CnNe"
         ],
         "seqColumnIds": [
           "NiY05A8JK14TGaI78w956",
@@ -67,46 +68,51 @@
           "pTJrkbcZ1wOfqil7NPHkg",
           "6SxNGT4yZBOUa4EGEnxOY",
           "8QShIqkdHW6CeSAMvDFa9",
-          "DepoUMXo_H7C_dvIu4eg1"
+          "DepoUMXo_H7C_dvIu4eg1",
+          "-W6M3l__GKict3bJ3CnNe"
         ],
         "ui": {
-          "x": 166,
-          "y": 626,
+          "x": 75,
+          "y": 598,
           "zIndex": 2,
-          "widthName": 83,
+          "widthName": 60,
           "widthComment": 91,
           "color": ""
         },
         "meta": {
-          "updateAt": 1739554588634,
+          "updateAt": 1739646012552,
           "createAt": 1737988321908
         }
       },
       "uJG5ApVJLW0DgtFWQRIOT": {
         "id": "uJG5ApVJLW0DgtFWQRIOT",
-        "name": "AdditionalAtributes",
+        "name": "attrAssign",
         "comment": "Связь портфолио с атрибутами и их значения",
         "columnIds": [
+          "bqoKQPj9yVw_VKUub8QL5",
           "XICcUxUOEnmgVWg0opUGF",
           "VE7ObtLSFbXS9cms5KtN3",
-          "uRhj330yiQ3T49zCZwRaI"
+          "uRhj330yiQ3T49zCZwRaI",
+          "bFnRpg11zlLPOkH0LeVvh"
         ],
         "seqColumnIds": [
           "Xupa69c7krQR4-AgYz-Ea",
+          "bqoKQPj9yVw_VKUub8QL5",
           "XICcUxUOEnmgVWg0opUGF",
           "VE7ObtLSFbXS9cms5KtN3",
-          "uRhj330yiQ3T49zCZwRaI"
+          "uRhj330yiQ3T49zCZwRaI",
+          "bFnRpg11zlLPOkH0LeVvh"
         ],
         "ui": {
           "x": 111.7021,
           "y": 829.5745,
           "zIndex": 78,
-          "widthName": 110,
+          "widthName": 60,
           "widthComment": 272,
           "color": ""
         },
         "meta": {
-          "updateAt": 1739553493598,
+          "updateAt": 1739646308422,
           "createAt": 1737988802976
         }
       },
@@ -125,66 +131,70 @@
           "K_JYYwA4wwbSawYdU5nX2"
         ],
         "ui": {
-          "x": 680,
-          "y": 470,
+          "x": 679,
+          "y": 425,
           "zIndex": 115,
           "widthName": 60,
           "widthComment": 109,
           "color": ""
         },
         "meta": {
-          "updateAt": 1739553509023,
+          "updateAt": 1739645642465,
           "createAt": 1737991022708
         }
       },
       "UfjnExyuKD5WdaJCwCEGh": {
         "id": "UfjnExyuKD5WdaJCwCEGh",
-        "name": "BaseTags",
+        "name": "tagAssign",
         "comment": "Связь самих тегов и портфолио",
         "columnIds": [
-          "1dC7uRO_svswmpwI_8MRm",
-          "FMYs-e6aRyGR9zTchS2Ah"
+          "FGQ3Q8V28WPqsoZvzo9oh",
+          "FMYs-e6aRyGR9zTchS2Ah",
+          "1dC7uRO_svswmpwI_8MRm"
         ],
         "seqColumnIds": [
           "1gtR7NyMRUngB3OpYqE2E",
-          "1dC7uRO_svswmpwI_8MRm",
-          "FMYs-e6aRyGR9zTchS2Ah"
+          "FGQ3Q8V28WPqsoZvzo9oh",
+          "FMYs-e6aRyGR9zTchS2Ah",
+          "1dC7uRO_svswmpwI_8MRm"
         ],
         "ui": {
-          "x": 643,
-          "y": 638,
+          "x": 656,
+          "y": 645,
           "zIndex": 122,
           "widthName": 60,
           "widthComment": 188,
           "color": ""
         },
         "meta": {
-          "updateAt": 1739553499864,
+          "updateAt": 1739647186798,
           "createAt": 1737991042220
         }
       },
       "dHXWksC9tU367O9VpDQw9": {
         "id": "dHXWksC9tU367O9VpDQw9",
-        "name": "AttrKeys",
+        "name": "Attr",
         "comment": "Сами атрибуты ",
         "columnIds": [
           "NgruCdmzco1vY6_5Cv8Nb",
-          "XSEHpS50hsHW838cBuL7k"
+          "XSEHpS50hsHW838cBuL7k",
+          "F_mJyZkWhQi42AQTIGTIF"
         ],
         "seqColumnIds": [
           "NgruCdmzco1vY6_5Cv8Nb",
-          "XSEHpS50hsHW838cBuL7k"
+          "XSEHpS50hsHW838cBuL7k",
+          "F_mJyZkWhQi42AQTIGTIF"
         ],
         "ui": {
-          "x": 691.6809,
-          "y": 841.8298,
+          "x": 770.6809,
+          "y": 852.8298,
           "zIndex": 124,
           "widthName": 60,
           "widthComment": 94,
           "color": ""
         },
         "meta": {
-          "updateAt": 1739553521857,
+          "updateAt": 1739647242553,
           "createAt": 1737992689108
         }
       },
@@ -195,23 +205,27 @@
         "columnIds": [
           "7nOx23Xt3LXPVikdq6nCq",
           "a527_XgW36PyIwv5z1ieA",
-          "bqcgLqnC3Wdls1R_UWSBs"
+          "bqcgLqnC3Wdls1R_UWSBs",
+          "WNXYNk7LJV10vXwvH1q2g",
+          "x0GYU4O2iUUWhGc62SUbo"
         ],
         "seqColumnIds": [
           "7nOx23Xt3LXPVikdq6nCq",
           "a527_XgW36PyIwv5z1ieA",
-          "bqcgLqnC3Wdls1R_UWSBs"
+          "bqcgLqnC3Wdls1R_UWSBs",
+          "WNXYNk7LJV10vXwvH1q2g",
+          "x0GYU4O2iUUWhGc62SUbo"
         ],
         "ui": {
-          "x": 133.3481,
-          "y": 416.3542,
+          "x": 109.3481,
+          "y": 350.3542,
           "zIndex": 138,
           "widthName": 60,
           "widthComment": 85,
           "color": ""
         },
         "meta": {
-          "updateAt": 1739553525391,
+          "updateAt": 1739645959095,
           "createAt": 1739213790829
         }
       }
@@ -220,7 +234,7 @@
       "NiY05A8JK14TGaI78w956": {
         "id": "NiY05A8JK14TGaI78w956",
         "tableId": "hso_al6hmpbqbIK6whrW8",
-        "name": "ptfID",
+        "name": "ID",
         "comment": "ID портфолио",
         "dataType": "TEXT",
         "default": "",
@@ -233,7 +247,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1739556409463,
+          "updateAt": 1739645691378,
           "createAt": 1737988358524
         }
       },
@@ -280,7 +294,7 @@
       "pTJrkbcZ1wOfqil7NPHkg": {
         "id": "pTJrkbcZ1wOfqil7NPHkg",
         "tableId": "hso_al6hmpbqbIK6whrW8",
-        "name": "ptfName",
+        "name": "Name",
         "comment": "Имя портфолио",
         "dataType": "TEXT",
         "default": "",
@@ -293,7 +307,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1739555742360,
+          "updateAt": 1739646338082,
           "createAt": 1737988422122
         }
       },
@@ -360,9 +374,9 @@
       "LQE-V-iA2XBFqBjubu-kP": {
         "id": "LQE-V-iA2XBFqBjubu-kP",
         "tableId": "qVLZ4mZTz8UoQJWpzlTu-",
-        "name": "tagID",
+        "name": "ID",
         "comment": "ID тэга",
-        "dataType": "INTEGER",
+        "dataType": "TEXT",
         "default": "",
         "options": 10,
         "ui": {
@@ -373,14 +387,14 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1739555786897,
+          "updateAt": 1739645729794,
           "createAt": 1737991033116
         }
       },
       "Je0A_pR6wXk-NsbZhKltM": {
         "id": "Je0A_pR6wXk-NsbZhKltM",
         "tableId": "qVLZ4mZTz8UoQJWpzlTu-",
-        "name": "desc",
+        "name": "Name",
         "comment": "Что за тэг",
         "dataType": "TEXT",
         "default": "",
@@ -393,7 +407,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1739555795145,
+          "updateAt": 1739646351951,
           "createAt": 1737991076828
         }
       },
@@ -482,7 +496,7 @@
         "tableId": "UfjnExyuKD5WdaJCwCEGh",
         "name": "tagID",
         "comment": "ID (связь с) тэгом",
-        "dataType": "INTEGER",
+        "dataType": "TEXT",
         "default": "",
         "options": 8,
         "ui": {
@@ -493,7 +507,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1739555783241,
+          "updateAt": 1739645729794,
           "createAt": 1737991151719
         }
       },
@@ -520,7 +534,7 @@
       "NgruCdmzco1vY6_5Cv8Nb": {
         "id": "NgruCdmzco1vY6_5Cv8Nb",
         "tableId": "dHXWksC9tU367O9VpDQw9",
-        "name": "attrID",
+        "name": "ID",
         "comment": "ID атрибута",
         "dataType": "TEXT",
         "default": "",
@@ -533,14 +547,14 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1739555777521,
+          "updateAt": 1739645700634,
           "createAt": 1737992704602
         }
       },
       "XSEHpS50hsHW838cBuL7k": {
         "id": "XSEHpS50hsHW838cBuL7k",
         "tableId": "dHXWksC9tU367O9VpDQw9",
-        "name": "attrName",
+        "name": "Name",
         "comment": "имя атрибута",
         "dataType": "TEXT",
         "default": "",
@@ -553,7 +567,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1739553406533,
+          "updateAt": 1739646369839,
           "createAt": 1737992708136
         }
       },
@@ -600,27 +614,27 @@
       "uRhj330yiQ3T49zCZwRaI": {
         "id": "uRhj330yiQ3T49zCZwRaI",
         "tableId": "uJG5ApVJLW0DgtFWQRIOT",
-        "name": "attrValue",
-        "comment": "Значение атрибута (Пример: 8 лет)",
+        "name": "value",
+        "comment": "Значение атрибута ",
         "dataType": "TEXT",
         "default": "",
         "options": 0,
         "ui": {
           "keys": 0,
           "widthName": 60,
-          "widthComment": 207,
+          "widthComment": 118,
           "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1739553213977,
+          "updateAt": 1739646364495,
           "createAt": 1737992772816
         }
       },
       "7nOx23Xt3LXPVikdq6nCq": {
         "id": "7nOx23Xt3LXPVikdq6nCq",
         "tableId": "OefB58gLXW5rz2UfhgmC-",
-        "name": "userID",
+        "name": "ID",
         "comment": "ID пользователя",
         "dataType": "TEXT",
         "default": "",
@@ -633,27 +647,27 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1739555576277,
+          "updateAt": 1739645685505,
           "createAt": 1739213815845
         }
       },
       "a527_XgW36PyIwv5z1ieA": {
         "id": "a527_XgW36PyIwv5z1ieA",
         "tableId": "OefB58gLXW5rz2UfhgmC-",
-        "name": "username",
-        "comment": "имя САМОГО пользователя",
+        "name": "login",
+        "comment": "логин пользователя",
         "dataType": "TEXT",
         "default": "",
         "options": 8,
         "ui": {
           "keys": 0,
           "widthName": 60,
-          "widthComment": 163,
+          "widthComment": 121,
           "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1739213874069,
+          "updateAt": 1739645799180,
           "createAt": 1739213842898
         }
       },
@@ -696,6 +710,146 @@
           "updateAt": 1739555590190,
           "createAt": 1739214068866
         }
+      },
+      "FGQ3Q8V28WPqsoZvzo9oh": {
+        "id": "FGQ3Q8V28WPqsoZvzo9oh",
+        "tableId": "UfjnExyuKD5WdaJCwCEGh",
+        "name": "ID",
+        "comment": "",
+        "dataType": "TEXT",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1739645724882,
+          "createAt": 1739645710378
+        }
+      },
+      "bqoKQPj9yVw_VKUub8QL5": {
+        "id": "bqoKQPj9yVw_VKUub8QL5",
+        "tableId": "uJG5ApVJLW0DgtFWQRIOT",
+        "name": "ID",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1739645741403,
+          "createAt": 1739645735371
+        }
+      },
+      "WNXYNk7LJV10vXwvH1q2g": {
+        "id": "WNXYNk7LJV10vXwvH1q2g",
+        "tableId": "OefB58gLXW5rz2UfhgmC-",
+        "name": "lust_seen",
+        "comment": "Время последнего посещения",
+        "dataType": "TEXT",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 180,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1739645882054,
+          "createAt": 1739645809580
+        }
+      },
+      "x0GYU4O2iUUWhGc62SUbo": {
+        "id": "x0GYU4O2iUUWhGc62SUbo",
+        "tableId": "OefB58gLXW5rz2UfhgmC-",
+        "name": "email",
+        "comment": "Почта нужна для восстановления пароля",
+        "dataType": "TEXT",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 244,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1739645953007,
+          "createAt": 1739645889818
+        }
+      },
+      "-W6M3l__GKict3bJ3CnNe": {
+        "id": "-W6M3l__GKict3bJ3CnNe",
+        "tableId": "hso_al6hmpbqbIK6whrW8",
+        "name": "pictures",
+        "comment": "изображение портфолио",
+        "dataType": "TEXT",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 150,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1739646007504,
+          "createAt": 1739645965367
+        }
+      },
+      "F_mJyZkWhQi42AQTIGTIF": {
+        "id": "F_mJyZkWhQi42AQTIGTIF",
+        "tableId": "dHXWksC9tU367O9VpDQw9",
+        "name": "desc",
+        "comment": "Описание атрибута",
+        "dataType": "TEXT",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 117,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1739646119965,
+          "createAt": 1739646092865
+        }
+      },
+      "bFnRpg11zlLPOkH0LeVvh": {
+        "id": "bFnRpg11zlLPOkH0LeVvh",
+        "tableId": "uJG5ApVJLW0DgtFWQRIOT",
+        "name": "order",
+        "comment": "Положение в портфолио",
+        "dataType": "INTEGER",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 148,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1739646180820,
+          "createAt": 1739646152138
+        }
       }
     },
     "relationshipEntities": {
@@ -709,8 +863,8 @@
           "columnIds": [
             "LQE-V-iA2XBFqBjubu-kP"
           ],
-          "x": 862.5,
-          "y": 574,
+          "x": 861.5,
+          "y": 529,
           "direction": 8
         },
         "end": {
@@ -718,8 +872,8 @@
           "columnIds": [
             "1dC7uRO_svswmpwI_8MRm"
           ],
-          "x": 862.5,
-          "y": 638,
+          "x": 875.5,
+          "y": 645,
           "direction": 4
         },
         "meta": {
@@ -737,8 +891,8 @@
           "columnIds": [
             "NiY05A8JK14TGaI78w956"
           ],
-          "x": 569,
-          "y": 690,
+          "x": 530,
+          "y": 674,
           "direction": 2
         },
         "end": {
@@ -746,8 +900,8 @@
           "columnIds": [
             "FMYs-e6aRyGR9zTchS2Ah"
           ],
-          "x": 643,
-          "y": 690,
+          "x": 656,
+          "y": 709,
           "direction": 1
         },
         "meta": {
@@ -765,8 +919,8 @@
           "columnIds": [
             "NiY05A8JK14TGaI78w956"
           ],
-          "x": 367.5,
-          "y": 754,
+          "x": 302.5,
+          "y": 750,
           "direction": 8
         },
         "end": {
@@ -774,7 +928,7 @@
           "columnIds": [
             "XICcUxUOEnmgVWg0opUGF"
           ],
-          "x": 367.7021,
+          "x": 338.2021,
           "y": 829.5745,
           "direction": 4
         },
@@ -793,8 +947,8 @@
           "columnIds": [
             "NgruCdmzco1vY6_5Cv8Nb"
           ],
-          "x": 691.6809,
-          "y": 893.8298,
+          "x": 770.6809,
+          "y": 916.8298,
           "direction": 1
         },
         "end": {
@@ -802,8 +956,8 @@
           "columnIds": [
             "VE7ObtLSFbXS9cms5KtN3"
           ],
-          "x": 623.7021,
-          "y": 893.5745,
+          "x": 564.7021,
+          "y": 917.5745,
           "direction": 2
         },
         "meta": {
@@ -821,8 +975,8 @@
           "columnIds": [
             "7nOx23Xt3LXPVikdq6nCq"
           ],
-          "x": 367.3481,
-          "y": 544.3542,
+          "x": 383.8481,
+          "y": 526.3542,
           "direction": 8
         },
         "end": {
@@ -830,8 +984,8 @@
           "columnIds": [
             "PX1jReeD2cpvQDRRhPkXL"
           ],
-          "x": 367.5,
-          "y": 626,
+          "x": 302.5,
+          "y": 598,
           "direction": 4
         },
         "meta": {
@@ -858,7 +1012,7 @@
       1737988321905,
       -1,
       {
-        "name": 1739554588634,
+        "name": 1739645774348,
         "comment": 1739552306335
       }
     ],
@@ -868,7 +1022,7 @@
       -1,
       {
         "options(primaryKey)": 1737988361640,
-        "name": 1739555705928,
+        "name": 1739645691378,
         "dataType": 1739556409463,
         "options(notNull)": 1737988381880,
         "default": 1739553046893,
@@ -892,7 +1046,7 @@
       1737988422120,
       -1,
       {
-        "name": 1739555742360,
+        "name": 1739646338082,
         "dataType": 1737988452835,
         "options(notNull)": 1737988455512,
         "comment": 1739552452659
@@ -918,7 +1072,7 @@
       1737988802975,
       -1,
       {
-        "name": 1737991263884,
+        "name": 1739646308422,
         "comment": 1739553444885
       }
     ],
@@ -944,9 +1098,9 @@
       1737991033114,
       -1,
       {
-        "name": 1739555786897,
+        "name": 1739645705106,
         "options(primaryKey)": 1737991071410,
-        "dataType": 1737991075970,
+        "dataType": 1739645729794,
         "comment": 1739552522894
       }
     ],
@@ -955,7 +1109,7 @@
       1737991042218,
       -1,
       {
-        "name": 1737991048756,
+        "name": 1739646316806,
         "comment": 1739552546403
       }
     ],
@@ -964,7 +1118,7 @@
       1737991076826,
       -1,
       {
-        "name": 1737991081532,
+        "name": 1739646351951,
         "comment": 1739553117855,
         "options(notNull)": 1739553100942,
         "dataType": 1739555795145
@@ -1021,7 +1175,7 @@
       {
         "options(notNull)": 1737991151715,
         "name": 1739555783241,
-        "dataType": 1737991151716,
+        "dataType": 1739645729794,
         "default": 1737991151716,
         "comment": 1739552865058
       }
@@ -1055,7 +1209,7 @@
       1737992689104,
       -1,
       {
-        "name": 1737992702105,
+        "name": 1739647242553,
         "comment": 1739553457069
       }
     ],
@@ -1064,7 +1218,7 @@
       1737992704599,
       -1,
       {
-        "name": 1739555777521,
+        "name": 1739645700634,
         "dataType": 1737992728791,
         "default": 1739553277042,
         "options(primaryKey)": 1737992736927,
@@ -1076,7 +1230,7 @@
       1737992708135,
       -1,
       {
-        "name": 1739553384940,
+        "name": 1739646369839,
         "dataType": 1737992734743,
         "options(notNull)": 1739553396998,
         "comment": 1739553406532
@@ -1123,9 +1277,9 @@
       1737992772815,
       -1,
       {
-        "name": 1737992776393,
+        "name": 1739646364495,
         "dataType": 1737992779330,
-        "comment": 1739553213977
+        "comment": 1739646194724
       }
     ],
     "OefB58gLXW5rz2UfhgmC-": [
@@ -1142,7 +1296,7 @@
       1739213815844,
       -1,
       {
-        "name": 1739555576277,
+        "name": 1739645685505,
         "options(notNull)": 1739213822736,
         "default": 1739553286010,
         "dataType": 1739213837529,
@@ -1155,10 +1309,10 @@
       1739213842896,
       -1,
       {
-        "name": 1739213849874,
+        "name": 1739645787964,
         "dataType": 1739213856271,
         "options(notNull)": 1739213860392,
-        "comment": 1739213874067
+        "comment": 1739645799180
       }
     ],
     "bqcgLqnC3Wdls1R_UWSBs": [
@@ -1189,6 +1343,77 @@
       1739214068862,
       -1,
       {}
+    ],
+    "FGQ3Q8V28WPqsoZvzo9oh": [
+      "tableColumnEntities",
+      1739645710378,
+      -1,
+      {
+        "name": 1739645714930,
+        "options(primaryKey)": 1739645718204,
+        "dataType": 1739645724882
+      }
+    ],
+    "bqoKQPj9yVw_VKUub8QL5": [
+      "tableColumnEntities",
+      1739645735370,
+      -1,
+      {
+        "name": 1739645738286,
+        "options(primaryKey)": 1739645741402
+      }
+    ],
+    "WNXYNk7LJV10vXwvH1q2g": [
+      "tableColumnEntities",
+      1739645809579,
+      -1,
+      {
+        "name": 1739645827908,
+        "dataType": 1739645837068,
+        "comment": 1739645882053
+      }
+    ],
+    "x0GYU4O2iUUWhGc62SUbo": [
+      "tableColumnEntities",
+      1739645889817,
+      -1,
+      {
+        "name": 1739645900087,
+        "dataType": 1739645908183,
+        "options(notNull)": 1739645910982,
+        "comment": 1739645953007
+      }
+    ],
+    "-W6M3l__GKict3bJ3CnNe": [
+      "tableColumnEntities",
+      1739645965366,
+      -1,
+      {
+        "name": 1739645983352,
+        "dataType": 1739645993071,
+        "comment": 1739646007504
+      }
+    ],
+    "F_mJyZkWhQi42AQTIGTIF": [
+      "tableColumnEntities",
+      1739646092865,
+      -1,
+      {
+        "name": 1739646097802,
+        "comment": 1739646109514,
+        "dataType": 1739646119964
+      }
+    ],
+    "bFnRpg11zlLPOkH0LeVvh": [
+      "tableColumnEntities",
+      1739646152138,
+      -1,
+      {
+        "name": 1739646157739,
+        "options(notNull)": 1739646160514,
+        "dataType": 1739646164234,
+        "comment": 1739646180819
+      }
     ]
   }
 }
