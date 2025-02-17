@@ -6,22 +6,17 @@ function dbcreate() {
     db.serialize(() => {
         db.run(`CREATE TABLE IF NOT EXISTS Users
 (
-  -- ID пользователя(значение по умолчанию - uuid v4)
-  ID        TEXT    NOT NULL DEFAULT lower(hex(randomblob(4)) || '-' || hex(randomblob(2)) || '-' || '4' || substr(hex(randomblob(2)), 2) || '-' || substr('89AB', 1 + (abs(random()) % 4), 1) || substr(hex(randomblob(2)), 2) || '-' || hex(randomblob(6))),
-  -- логин пользователя
+  ID        TEXT    NOT NULL DEFAULT(lower(hex(randomblob(4)) || '-' || hex(randomblob(2)) || '-' || '4' || substr(hex(randomblob(2)), 2) || '-' || substr('89AB', 1 + (abs(random()) % 4), 1) || substr(hex(randomblob(2)), 2) || '-' || hex(randomblob(6)))),
   login     TEXT    NOT NULL,
-  -- Пароль для доступа
   password  TEXT    NOT NULL,
-  -- Время последнего посещения
-  last_seen INTEGER NULL     DEFAULT Проще латы хранить в виде чисел: https://metanit.com/sql/sqlite/6.3.php,
-  -- Почта нужна для восстановления пароля
+  last_seen INTEGER NULL,
   email     TEXT    NOT NULL,
   PRIMARY KEY (ID)
 );`) //Создаём таблицу Users
         db.run(`CREATE TABLE IF NOT EXISTS Portfolios
 (
   -- ID портфолио
-  ID       TEXT NOT NULL DEFAULT lower(hex(randomblob(4)) || '-' || hex(randomblob(2)) || '-' || '4' || substr(hex(randomblob(2)), 2) || '-' || substr('89AB', 1 + (abs(random()) % 4), 1) || substr(hex(randomblob(2)), 2) || '-' || hex(randomblob(6))),,
+  ID       TEXT NOT NULL DEFAULT(lower(hex(randomblob(4)) || '-' || hex(randomblob(2)) || '-' || '4' || substr(hex(randomblob(2)), 2) || '-' || substr('89AB', 1 + (abs(random()) % 4), 1) || substr(hex(randomblob(2)), 2) || '-' || hex(randomblob(6)))),
   -- ID пользователя
   userID   TEXT NOT NULL,
   -- Имя портфолио
@@ -34,15 +29,14 @@ function dbcreate() {
         db.run(`CREATE TABLE IF NOT EXISTS Tags
 (
   -- ID тэга
-  ID   TEXT NOT NULL DEFAULT lower(hex(randomblob(4)) || '-' || hex(randomblob(2)) || '-' || '4' || substr(hex(randomblob(2)), 2) || '-' || substr('89AB', 1 + (abs(random()) % 4), 1) || substr(hex(randomblob(2)), 2) || '-' || hex(randomblob(6))),,
+  ID   TEXT NOT NULL DEFAULT(lower(hex(randomblob(4)) || '-' || hex(randomblob(2)) || '-' || '4' || substr(hex(randomblob(2)), 2) || '-' || substr('89AB', 1 + (abs(random()) % 4), 1) || substr(hex(randomblob(2)), 2) || '-' || hex(randomblob(6)))),
   -- Что за тэг
   Name TEXT NOT NULL,
   PRIMARY KEY (ID)
 );`)
-    })
     db.run(`CREATE TABLE IF NOT EXISTS tagAssign
 (
-  ID    TEXT NOT NULL DEFAULT lower(hex(randomblob(4)) || '-' || hex(randomblob(2)) || '-' || '4' || substr(hex(randomblob(2)), 2) || '-' || substr('89AB', 1 + (abs(random()) % 4), 1) || substr(hex(randomblob(2)), 2) || '-' || hex(randomblob(6))),,
+  ID    TEXT NOT NULL DEFAULT(lower(hex(randomblob(4)) || '-' || hex(randomblob(2)) || '-' || '4' || substr(hex(randomblob(2)), 2) || '-' || substr('89AB', 1 + (abs(random()) % 4), 1) || substr(hex(randomblob(2)), 2) || '-' || hex(randomblob(6)))),
   -- ID (связь с) портфолио
   ptfID TEXT NOT NULL,
   -- ID (связь с) тэгом
@@ -54,7 +48,7 @@ function dbcreate() {
     db.run(`CREATE TABLE IF NOT EXISTS Attr
 (
   -- ID атрибута
-  ID   TEXT NOT NULL DEFAULT lower(hex(randomblob(4)) || '-' || hex(randomblob(2)) || '-' || '4' || substr(hex(randomblob(2)), 2) || '-' || substr('89AB', 1 + (abs(random()) % 4), 1) || substr(hex(randomblob(2)), 2) || '-' || hex(randomblob(6))),,
+  ID   TEXT NOT NULL DEFAULT (lower(hex(randomblob(4)) || '-' || hex(randomblob(2)) || '-' || '4' || substr(hex(randomblob(2)), 2) || '-' || substr('89AB', 1 + (abs(random()) % 4), 1) || substr(hex(randomblob(2)), 2) || '-' || hex(randomblob(6)))),
   -- имя атрибута
   Name TEXT NOT NULL,
   -- Описание атрибута
@@ -63,17 +57,14 @@ function dbcreate() {
 );`) //Создаём таблицу Attr
     db.run(`CREATE TABLE IF NOT EXISTS value
 (
-  -- ID значения
-  ID    TEXT NOT NULL DEFAULT lower(hex(randomblob(4)) || '-' || hex(randomblob(2)) || '-' || '4' || substr(hex(randomblob(2)), 2) || '-' || substr('89AB', 1 + (abs(random()) % 4), 1) || substr(hex(randomblob(2)), 2) || '-' || hex(randomblob(6))),,
-  -- само значение
+  ID    TEXT NOT NULL DEFAULT(lower(hex(randomblob(4)) || '-' || hex(randomblob(2)) || '-' || '4' || substr(hex(randomblob(2)), 2) || '-' || substr('89AB', 1 + (abs(random()) % 4), 1) || substr(hex(randomblob(2)), 2) || '-' || hex(randomblob(6)))),
   value TEXT NULL    ,
-  -- что это за значение
   meta  TEXT NOT NULL,
   PRIMARY KEY (ID)
 );`) //Создаём таблицу value
     db.run(`CREATE TABLE IF NOT EXISTS attrAssign
 (
-  ID     TEXT    NOT NULL DEFAULT lower(hex(randomblob(4)) || '-' || hex(randomblob(2)) || '-' || '4' || substr(hex(randomblob(2)), 2) || '-' || substr('89AB', 1 + (abs(random()) % 4), 1) || substr(hex(randomblob(2)), 2) || '-' || hex(randomblob(6))),,
+  ID     TEXT    NOT NULL DEFAULT(lower(hex(randomblob(4)) || '-' || hex(randomblob(2)) || '-' || '4' || substr(hex(randomblob(2)), 2) || '-' || substr('89AB', 1 + (abs(random()) % 4), 1) || substr(hex(randomblob(2)), 2) || '-' || hex(randomblob(6)))),
   -- ID (cвязь с) портфолио
   ptfID  TEXT    NOT NULL,
   -- ID (связь с) атрибутом
@@ -81,12 +72,13 @@ function dbcreate() {
   -- ID значения
   vID    TEXT    NOT NULL,
   -- Положение в портфолио
-  order  INTEGER NOT NULL,
+  orderField  INTEGER NOT NULL,
   PRIMARY KEY (ID),
   FOREIGN KEY (ptfID) REFERENCES Portfolios (ID),
   FOREIGN KEY (attrID) REFERENCES Attr (ID),
   FOREIGN KEY (vID) REFERENCES value (ID)
-);`) //Создаём таблицу attrAssign
+);
+`) //Создаём таблицу attrAssign
     db.run(`CREATE TABLE IF NOT EXISTS BaseGroup
 (
   -- Имя группы
@@ -100,7 +92,8 @@ function dbcreate() {
   FOREIGN KEY (AID) REFERENCES Attr (ID)
 );
 `) //Создаём таблицу BaseGroup
-
+    }
+  )
 }
 
 dbcreate()
