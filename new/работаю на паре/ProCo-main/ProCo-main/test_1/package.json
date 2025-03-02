@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "inquirer": "^8.2.6",
+    "sqlite3": "^5.1.7"
+  }
+}
