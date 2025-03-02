@@ -1,0 +1,21 @@
+SELECT ID, login, password, last_seen, email
+FROM Users;
+
+--Получение всех портфолио пользователя
+SELECT p.ID, p.userID, p.Name, p.pictures
+FROM Portfolios p
+INNER JOIN tagAssign ta on p.ID=ta.ptfID
+WHERE userID = '(здесь должен быть ID пользователя)';
+
+--Получение связей ptf и тэгов
+--Здесь придётся идти перебором
+SELECT ID, ptfID, tagID
+FROM tagAssign
+
+WHERE ptfID = '(здесь должен быть ID портфолио)';
+
+--Получение самих тэгов
+--Здесь тоже перебором
+SELECT ID, Name
+FROM Tags
+WHERE ID = '(здесь должен быть ID тэга из таблици со связями)';
