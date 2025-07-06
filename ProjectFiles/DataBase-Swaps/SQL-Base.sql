@@ -21,7 +21,7 @@ CREATE TABLE Portfolios (
 
 CREATE TABLE Tags (
   ID INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-  Name TEXT NOT NULL
+  Name varchar(200) NOT NULL
 );
 
 -- Тег - основа группирования портфолио
@@ -39,7 +39,7 @@ CREATE TABLE tagAssign
 
 create table AttributeKeys (
  ID INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
- NAME TEXT NOT NULL,
+ NAME varchar(200) NOT NULL,
  DESCRIPTION TEXT
 );
 
@@ -50,7 +50,7 @@ CREATE TABLE AttributeAssign (
   ptfID  INT    NOT NULL,
   attrID INT    NOT NULL,
   NumberOfAttribute  INT NOT NULL,
-  ValueAttr TEXT, 
+  ValueAttr varchar(200), 
   FOREIGN KEY (ptfID) REFERENCES Portfolios (ID),
   FOREIGN KEY (attrID) REFERENCES AttributeKeys (ID)
 );
