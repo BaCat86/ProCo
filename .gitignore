@@ -245,6 +245,9 @@ fabric.properties
 # PyPI configuration file
 .pypirc
 
+
+# Файлы и директории добавленные нами
 database.db
 token.yaml
 temp/
+.obsidian/
